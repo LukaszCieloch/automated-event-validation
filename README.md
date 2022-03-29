@@ -5,7 +5,7 @@
 https://community.tealiumiq.com/t5/Customer-Data-Hub/About-Functions/ta-p/34585#toc-hId--1156376365
 
 #### Define event schema
-###### Each schema can be stored aither locally in tealiumSsFunctionAT.js or as an global variable. On the event schema level you can define JSON with attributes and their porpertos like value(exact/contains)/type/length(max length) that will be verified for each invocation.
+###### Each schema can be stored either locally in tealiumSsFunctionAT.js or as a global variable. On the event schema level you can define JSON with attributes and their properties like value(exact/contains)/type/length(max length) that will be verified for each invocation.
 
 #### Schema example
 ```
@@ -23,7 +23,7 @@ https://community.tealiumiq.com/t5/Customer-Data-Hub/About-Functions/ta-p/34585#
 ###### For event schema's global variable, name needs to be the same as tealium_event value.
 
 #### Nested schemas
-###### In case you want to run very generic tests for set of variables that occure in multiple events you can group them and nest within event schemas. One example might be 'user' category from 'Schema example'. Potenatially this set of attributes should be part of all events after user have logged in. In such case you can create userSchema.json and nest it in your event schema.
+######  In case you want to run very generic tests for a set of variables that occur in multiple events you can group them and nest them within event schemas. One example might be the 'user' category from 'Schema example'. Potentially this set of attributes should be part of all events after users has logged in. In such case, you can create userSchema.json and nest it in your event schema.
 
 ```
 {
