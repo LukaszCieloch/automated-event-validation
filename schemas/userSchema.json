@@ -1,0 +1,8 @@
+{
+  "user_account_id": { "type": "string" },
+  "user_id": { "type": "string" },
+  "user_language": { "type": "string" },
+  "user_login_id": { "type": "string" },
+  "user_login_status": { "type": "string" },
+  "user_type": { "type": "string" }
+}

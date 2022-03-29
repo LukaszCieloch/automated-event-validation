@@ -1,0 +1,12 @@
+{
+    "job_days_left": {"type": "number" },
+    "job_employment_grade":  {"type": "string" },
+    "job_employment_type":  {"type": "string" },
+    "job_end_date": {"type": "string" },
+    "job_id": {"type": "string" },
+    "job_location": {"type": "string" },
+    "job_position": {"type": "string" },
+    "job_publication_date": {"type": "string" },
+    "job_status": {"type": "string" },
+    "job_title": {"type": "string" }
+  }

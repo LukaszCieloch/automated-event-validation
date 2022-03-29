@@ -1,0 +1,10 @@
+{
+  "ecommerce_checkout_funnel_name": { "type": "string" },
+  "ecommerce_product_id": { "type": "array" },
+  "ecommerce_product_name": { "type": "array" },
+  "ecommerce_product_paid_free": { "type": "array" },
+  "ecommerce_product_price": { "type": "array" },
+  "ecommerce_product_quantity": { "type": "array" },
+  "ecommerce_transaction_id": { "type": "string" },
+  "ecommerce_transaction_total": { "type": "number" }
+}

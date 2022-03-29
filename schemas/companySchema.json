@@ -1,0 +1,6 @@
+{
+  "company_employees_count": { "type": "number" },
+  "company_industry": { "type": "string" },
+  "company_location": { "type": "string" },
+  "company_name": { "type": "string" }
+}
