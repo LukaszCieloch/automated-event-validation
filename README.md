@@ -5,7 +5,7 @@
 https://community.tealiumiq.com/t5/Customer-Data-Hub/About-Functions/ta-p/34585#toc-hId--1156376365
 
 #### Define event schema
-###### Each schema can be stored either locally in tealiumSsFunctionAT.js or as a global variable. On the event schema level you can define JSON with attributes and their properties like value(exact/contains)/type/length(max length) that will be verified for each invocation.
+###### Each schema can be stored either locally in tealiumSsFunctionAT.js or as a global variable. On the event schema level you can define JSON with attributes and their properties like value(exact/contains)/type/length(max length)/regex-match that will be verified for each invocation.
 
 #### Schema example
 ```

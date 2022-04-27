@@ -70,6 +70,19 @@ import { event, store } from "tealium";
         return checkValueResponse;
     };
 
+    var checkRegex = function (key, schemaIndex) {
+        var checkRegexResponse = "";
+        var re = new RegExp(eventSchemaArray[schemaIndex][key].regex);
+        if (typeof eventData[key] !== "undefined") {
+            if(eventData[key].toString().search(re) !== -1){
+                checkRegexResponse = key + " --> Regex Matched \n";
+            } else {
+                errorMessage += key + ' --> Regex did not match: expected --> "/' + eventSchemaArray[schemaIndex][key].regex + '/" but found ---> "' + eventData[key] + '"\n';
+            }
+        }
+        return checkRegexResponse;
+    };
+
     for (var i = 0; i < eventSchemaArray.length; i++) {
         for (var key in eventSchemaArray[i]) {
             if (typeof eventSchemaArray[i][key] !== "undefined" && eventSchemaArray[i][key].hasOwnProperty("value") === true) {
@@ -80,6 +93,9 @@ import { event, store } from "tealium";
             }
             if (typeof eventSchemaArray[i][key] !== "undefined" && eventSchemaArray[i][key].hasOwnProperty("length") === true) {
                 checkLength(key, i);
+            }
+            if (typeof eventSchemaArray[i][key] !== "undefined" && eventSchemaArray[i][key].hasOwnProperty("regex") === true) {
+                checkRegex(key, i);
             }
         }
     }
